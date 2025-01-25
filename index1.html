@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        canvas {
+            border: 2px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .controls input, .controls button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Drawing Board Game 🎲</h1>
+        <canvas id="drawingBoard"></canvas>
+        <div class="controls">
+            <label for="brushSize">Brush Size: </label>
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+
+            <label for="colorPicker">Color: </label>
+            <input type="color" id="colorPicker" value="#000000">
+
+            <button id="clearButton">Clear Board</button>
+            <button id="undoButton">Undo</button>
+            <button id="downloadButton">Download Drawing</button> <!-- Download Button -->
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
